@@ -1,0 +1,4 @@
+<p>home works!</p>
+<p>{{_homeService.edit ? 'Güncelleme Kısmı Açık' : 'Güncelleme Kısmı Kapalı'}}</p>
+<button *ngIf="!_homeService.edit" (click)="_homeService.edit = true">Güncelleme Kısmını Aç</button>
+<button *ngIf="_homeService.edit" (click)="_homeService.edit = false">Güncelleme Kısmını Kapat</button>
